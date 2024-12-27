@@ -38,7 +38,7 @@ const Login = () => {
     if (user.password === user.password_check && user.password !== "") {
       const createUser = await actions.createUser(user);
       if (createUser) {
-        toggleModal("User was created successfully!");
+        toggleModal("El usuario fué creado exitosamente!");
         setUser({
           ...user,
           name: "",
@@ -48,10 +48,10 @@ const Login = () => {
         });
         setIsShown(!isShow);
       } else {
-        toggleModal("An unexpected error occurred.");
+        toggleModal("Ups... sucedió un error inexperado.");
       }
     } else {
-      toggleModal("Passwords do not match!");
+      toggleModal("Passwords no coinciden!");
       setUser({ ...user, password: "", password_check: "" });
     }
   };
@@ -59,10 +59,10 @@ const Login = () => {
   const loginCustomer = async () => {
     const login = await actions.loginUser(user);
     if (login) {
-      toggleModal("Login was successful!");
+      toggleModal("Login exitoso!");
       setTimeout(() => navigate("/private"), 1500);
     } else {
-      toggleModal("Unable to login. Please check your credentials.");
+      toggleModal("Imposible entrar. Por favor verifique los datos!!");
       setUser({
         ...user,
         password: "",
@@ -80,7 +80,7 @@ const Login = () => {
               <input
                 type="text"
                 value={user.name}
-                placeholder="Name"
+                placeholder="Nombre"
                 autoComplete="off"
                 onChange={(e) => setUser({ ...user, name: e.target.value })}
               />
@@ -109,7 +109,7 @@ const Login = () => {
               <input
                 type="password"
                 value={user.password_check}
-                placeholder="Repeat Password"
+                placeholder="Repetir Password"
                 autoComplete="new-password"
                 onChange={(e) =>
                   setUser({ ...user, password_check: e.target.value })
@@ -123,13 +123,13 @@ const Login = () => {
             className={!isShow ? "" : "selected"}
             onClick={() => (isShow ? registerUser() : setIsShown(!isShow))}
           >
-            Register
+            Registro
           </button>
           <button
             className={isShow ? "" : "selected"}
             onClick={() => (!isShow ? loginCustomer() : setIsShown(!isShow))}
           >
-            Sign in
+            Entrar
           </button>
         </div>
       </section>
