@@ -16,5 +16,5 @@ class User(db.Model):
             "id": self.id,
             "email": self.email,
             # do not serialize the password, its a security breach
+     
         }
-    #PRUEBA DE GIT PARA VER COMO VA git push origin
