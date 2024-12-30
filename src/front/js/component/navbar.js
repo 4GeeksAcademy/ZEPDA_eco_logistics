@@ -8,6 +8,18 @@ export const Navbar = () => {
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1">zepda</span>
 					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
+					<span className="navbar-brand mb-0 h1">zepda</span>
+					<h1>hola</h1>
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
