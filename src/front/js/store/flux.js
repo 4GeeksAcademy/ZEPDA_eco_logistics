@@ -1,6 +1,4 @@
 const getState = ({ getStore, getActions, setStore }) => {
-
-    
     return {
         store: {
             news: []
@@ -9,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             fetchNews: async (setLoading) => {
                 try {
                     setLoading(true);
-                    const resp = await fetch(process.env.BACKEND_URL + "api/news");
+                    const resp = await fetch(process.env.BACKEND_URL + "news");
                     if (!resp.ok) {
                         throw new Error('Network response was not ok');
                     }

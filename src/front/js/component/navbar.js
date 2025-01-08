@@ -9,12 +9,12 @@ export const Navbar = () => {
   <div className="container-fluid">
     <Link to={"/"}className="navbar-logo"><img src={zpdalogo}/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto d-flex gap-3">
         <li className="nav-item">
-          <Link to={"/page/servicios"} className="nav-link text-black" aria-current="page" href="#">Servicios</Link>
+          <Link to={"/servicios"} className="nav-link text-black" aria-current="page" href="#">Servicios</Link>
         </li>
         <li className="nav-item">
           <Link to={"/empresas"} className="nav-link text-black" href="#">Empresas</Link>
@@ -26,7 +26,7 @@ export const Navbar = () => {
    
         </li>
         <li className="nav-item">
-          <Link to={"/"} className="nav-link text-black">Contacto</Link>
+          <Link to={"/contacto"} className="nav-link text-black">Contacto</Link>
         </li>
       </ul>
       
