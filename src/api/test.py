@@ -18,16 +18,3 @@ class User(db.Model):
             # do not serialize the password, its a security breach
         }
     #PRUEBA DE GIT PARA VER COMO VA git push origin
-         user = User()
-            user.email = "test_user" + str(x) + "@test.com"
-            user.password = "123456"
-             user = User()
-            user.email = "test_user" + str(x) + "@test.com"
-            user.password = "123456"
-             user = User()
-            user.email = "test_user" + str(x) + "@test.com"
-            user.password = "123456"
-             user = User()
-            user.email = "test_user" + str(x) + "@test.com"
-            user.password = "123456"
-            

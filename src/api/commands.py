@@ -33,7 +33,7 @@ def setup_commands(app):
     def insert_test_data():
         pass
 #*************************************************************************************************************
-        @app.cli.command("insert-test-users") # name of our command
+    @app.cli.command("insert-test-users") # name of our command
     @click.argument("count") # argument of out command
     def insert_test_users(count):
         print("Creating test users")
