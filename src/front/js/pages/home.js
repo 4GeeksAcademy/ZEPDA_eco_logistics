@@ -44,7 +44,7 @@ export const Home = () => {
 				para sus diferentes actividades, principalmente en los aspectos logísticos como el packaging de sus productos, 
 				transportes, materiales, gestión de residuos y/o digitalización de su negocio, centralizando en un solo sitio web 
 				todos los servicios disponibles y haciendo más facil los procesos de búsqueda y contratación. Si quieres formar 
-				parte de nuestro equipo <Link className="links" to={"/"}> <strong>únete a nosotros como empresa colaboradora.</strong></Link></p>	
+				parte de nuestro equipo <Link className="links" to={"/uneteanosotros"}> <strong>únete a nosotros como empresa colaboradora.</strong></Link></p>	
 
 			</div>
 			<p>Nuestros colaboradores:</p>
