@@ -6,9 +6,11 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";  // Asegúrate de que Home está dentro de la carpeta pages
 import { Servicios } from "./pages/servicios";  // Importar el componente Servicios
 import { Empresas } from "./pages/empresas";  // Importar el componente Empresas
-import { QuienesSomos } from "./pages/quienes_somos";  // Importar el componente Quiénes Somos
+import { QuienesSomos } from "./pages/quienesSomos";  // Importar el componente Quiénes Somos
 import { Contacto } from "./pages/contacto";  // Importar el componente Contacto
 import injectContext from "./store/appContext";
+import { Uneteanosotros } from "./pages/uneteanosotros";
+import { NewsDetail } from "./component/newDetails";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -28,8 +30,10 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         <Route element={<Servicios />} path="/servicios" />
                         <Route element={<Empresas />} path="/empresas" />
-                        <Route element={<QuienesSomos />} path="/quienes_somos" />
+                        <Route element={<QuienesSomos />} path="/quienesSomos" />
                         <Route element={<Contacto />} path="/contacto" />
+                        <Route element={<Uneteanosotros/>} path="/uneteanosotros"/>
+                        <Route path="/news/:index" element={<NewsDetail />} />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
